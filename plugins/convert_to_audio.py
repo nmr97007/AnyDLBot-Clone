@@ -119,7 +119,7 @@ async def convert_to_audio(bot, update):
                 progress=progress_for_pyrogram,
                 progress_args=(
                     Translation.UPLOAD_START,
-                    a, 
+                    a.message_id, update.chat.id, 
                     c_time
                 )
             )
